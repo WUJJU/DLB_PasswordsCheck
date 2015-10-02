@@ -19,7 +19,7 @@ public class pw_check {
         // all possible passwords
       
       //  Queue<String> allpw = new Queue<String>();
-        //  bf.run();
+          bf.run();
        
           FileIn file=new FileIn();
           file.readDic("My_Dictionary.txt");

@@ -16,12 +16,13 @@ public class BruteForce2 {
         pw = new int[6];
 
         // chars=new
-      // chars=new char[]{' ','0','1','a','b','!','@'};
+       chars=new char[]{' ','0','1','a','b','!','@'};
+       /**
         chars = new char[] { ' ', '0', '1', '2', '3', '4', '5', '6', '7', '8',
                 '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
                 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
                 'x', 'y', 'z', '!', '@', '$', '%', '&', '*' };
-
+**/
         Arrays.fill(pw, 1, pw.length, 1);
         // System.out.println(pw[0]+"----"+pw[1]);
 
