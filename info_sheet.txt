@@ -6,19 +6,27 @@ You must submit an information sheet with every assignment.  Also be sure
 to submit all materials following the procedures described on the
 submission procedures page.
 
-Name:  
+Name:  Hao Wu
 
-Lecture section:  
+Lecture section:  CS1501
 
-Recitation day and time:  
+Recitation day and time:  Friday 2-3pm
 
-Assignment #:  
+Assignment #:  1
 
-Program due date:  
+Program due date:  October 2nd 11:59pm
 
 Handed in date:  
 
-Source code file name(s):
+Source code file name(s): 
+
+pw_check.java is main code, calling method from other java files.
+BurteFoce2.java is used to generate all possible passwords 
+DLB.java is implemention of DLB data structure
+FileIn.java read file
+FileOut.java write passwords into file
+StdIn.java and Queue.java 
+                    
 
 
 
@@ -28,13 +36,15 @@ Source code file name(s):
 
 Other file name(s) (if relevant):
 
+Good_Passwords.txt stores all good passwords
+My_Dictionary.txt stores all possible passwords(46 power 5) inserted into DLB
 
 
 
 
 
 
-Does your program run without error?:
+Does your program run without error?: Yes
 
 If not, what is/are the error(s) and which parts of your program run
 correctly?:
@@ -46,6 +56,8 @@ correctly?:
 
 
 Additional comments to the grader:
+
+I use brute force method to generate all possible passowords. The number is 46 power 5. It takes about 30 mintues to go throgh my BruteForce2.java to create all possible passwords.
 
 
 
