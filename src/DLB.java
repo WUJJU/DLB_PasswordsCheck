@@ -321,7 +321,7 @@ public class DLB {
     }
 
     public Iterable<String> goodPws(String filename) {
-        // TODO Auto-generated method stub
+    
         check_flag = true;
         FileIn filein = new FileIn();
 

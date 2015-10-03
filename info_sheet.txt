@@ -16,7 +16,7 @@ Assignment #:  1
 
 Program due date:  October 2nd 11:59pm
 
-Handed in date:  
+Handed in date:  October 2nd 11:23pm
 
 Source code file name(s): 
 
@@ -44,22 +44,18 @@ My_Dictionary.txt stores all possible passwords(46 power 5) inserted into DLB
 
 
 
-Does your program run without error?: Yes
+Does your program run without error?: No
 
 If not, what is/are the error(s) and which parts of your program run
 correctly?:
 
-
-
+I have two char array in BruteForce2.java class. I use short one(incompleted one) to run my code. So the good passwords loss some. 
+My problem will run out of memory when I use long char array. I don’t know how to handle it.
 
 
 
 
 Additional comments to the grader:
-
-I use brute force method to generate all possible passowords. The number is 46 power 5. It takes about 30 mintues to go throgh my BruteForce2.java to create all possible passwords.
-
-
 
 
 

@@ -17,17 +17,16 @@ public class pw_check {
             FileOut fout = new FileOut();
             
         // all possible passwords
-      
+  
       Queue<String> allpw = new Queue<String>();
-      bf.run();
+    bf.run();
        
           FileIn file=new FileIn();
           allpw=file.readDic("My_Dictionary.txt");
-      
           for (String eachpw : allpw) {
               dlb.addPw(eachpw);
           }
-           
+          System.out.println("-----already read My_Dic.txt------");
         System.out.println("already insert into DLB Data Structrue");
 
 
@@ -62,7 +61,7 @@ public class pw_check {
 
             Queue<String> allgoodpw = new Queue<String>();
             FileIn file=new FileIn();
-            allgoodpw=file.readDic("Good_Passwords.txt");
+           allgoodpw=file.readDic("Good_Passwords.txt");
             for (String eachgoodpw : allgoodpw) {
                 dlb.addPw(eachgoodpw.toString());
             }

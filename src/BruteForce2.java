@@ -11,12 +11,15 @@ public class BruteForce2 {
     DLB dlb1 = new DLB();
     DLB dlb=new DLB();
     FileOut fout = new FileOut();
-    
+
     public BruteForce2() {
         pw = new int[6];
 
         // chars=new
-       chars=new char[]{' ','0','1','a','b','!','@'};
+        chars=new char[]{' ','0','1','2', '3', '4', '8',
+                '9','$', '%', '&', '*'};
+      // chars=new char[]{' ','0','1','2', '3', '4', '8',
+        //       '9', 'a', 'b', 'c','e','f','i','l','m', 'n', 'o', 'p','s','t','!','@','$', '%', '&', '*'};
        /**
         chars = new char[] { ' ', '0', '1', '2', '3', '4', '5', '6', '7', '8',
                 '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
@@ -74,14 +77,7 @@ public class BruteForce2 {
             System.out.println(sb+"  not insert into");
         }
       
-        if(queue.size()>100000){
-          
-            fout.createFile("My_Dictionary.txt", queue);
-         
       
-           
-            queue.clear();
-        }
       System.out.println("Total Memory:"+Runtime.getRuntime().totalMemory()/(1024*1024)+"M");
      
     }
