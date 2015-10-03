@@ -18,20 +18,24 @@ public class pw_check {
             
         // all possible passwords
       
-      //  Queue<String> allpw = new Queue<String>();
-          bf.run();
+      Queue<String> allpw = new Queue<String>();
+      bf.run();
        
           FileIn file=new FileIn();
-          file.readDic("My_Dictionary.txt");
+          allpw=file.readDic("My_Dictionary.txt");
       
-       
-    
+          for (String eachpw : allpw) {
+              dlb.addPw(eachpw);
+          }
+           
         System.out.println("already insert into DLB Data Structrue");
 
 
         Queue<String> q2 = new Queue<String>();
         q2 = (Queue<String>) dlb.keys();
-
+        for(String key:q2){
+            System.out.println("X in DLB:"+key);
+        }
    
         /**
          * get all good passwords

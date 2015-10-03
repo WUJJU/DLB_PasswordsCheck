@@ -183,9 +183,9 @@ public class DLB {
         }
         if (curNode.value == '^') {
             if (check_flag == true) {
-                boolean flag3 = check2(prefix);
+                //boolean flag3 = check2(prefix);
                 boolean flag4 = check3(prefix);
-                if (flag3 && flag4) {
+                if (flag4) {
                     System.out.println("good password+" + prefix.toString());
                     results.enqueue(prefix.toString());
                 }
@@ -258,13 +258,15 @@ public class DLB {
     // emunerate i and l in prefix for 1;
     private void il_replace() {
         for (int i = pre.length - 1; i >= 0; i--) {
-            if (pre[i] == 1 || pre[i] == 0) {
+            if (pre[i] == 1 || pre[i] ==0) {
                 if (pre[i] < il.length - 1) {
                     pre[i]++;
 
                     return;
+                }else if(pre[i]!=-1){
+                    pre[i] = 1;
                 }
-                pre[i] = 1;
+              
             }
 
         }

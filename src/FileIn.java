@@ -20,15 +20,17 @@ public class FileIn {
         dlb = new DLB();
         while (line != null) {
             queue.enqueue(line);
-            System.out.println("insert:"+line);
-            System.out.println("Total Memory:"+Runtime.getRuntime().totalMemory()/(1024*1024)+"M");
-            if(queue.size()>10000) {
+            //System.out.println("insert:"+line);
+            //System.out.println("Total Memory:"+Runtime.getRuntime().totalMemory()/(1024*1024)+"M");
+           /**
+            if(queue.size()>1000) {
                 for (String eachpw : queue) {
                     dlb.addPw(eachpw);
                 }
                 queue.clear();
                
             }
+            **/
            line=br.readLine();
          
         }
@@ -39,9 +41,11 @@ public class FileIn {
         e.printStackTrace();
     }
     System.out.println("---already read txt file-----");
+    /**
     for (String eachpw : queue) {
         dlb.addPw(eachpw);
     }
+    **/
       return queue;
     }
 }
