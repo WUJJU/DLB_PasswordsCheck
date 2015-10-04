@@ -34,11 +34,11 @@ public class FileIn {
         // TODO Auto-generated catch block
         e.printStackTrace();
     }
-
+/**
     for (String eachpw : queue) {
         dlb.addPw(eachpw);
     }
-     
+  **/   
       return queue;
     }
     public Queue<String> readDic(String filename,DLB dlb){
